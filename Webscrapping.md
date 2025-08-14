@@ -69,8 +69,8 @@ from collections import Counter
 import re
 
 # Processando o texto
-words = re.findall(r'\b\w+\b', text.lower()) # Tokenize and convert to lowercase
-filtered_words = [word for word in words if word not in STOPWORDS] # Remove stopwords
+words = re.findall(r'\b\w+\b', text.lower()) # Normalizando as keys.
+filtered_words = [word for word in words if word not in STOPWORDS] # Removendo os espaços
 
 # Calculando a frequência das palavras
 word_counts = Counter(filtered_words)
