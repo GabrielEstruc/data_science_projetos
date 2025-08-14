@@ -86,7 +86,6 @@ print(word_counts)
 
 
 ```python
-sorted_by_value = dict(sorted(word_counts.items(), key=lambda item: item[1], reverse=True)) #Ordenando o dicionário
 del word_counts['s'],word_counts['bbc'],word_counts['news'],word_counts['new'],word_counts['watch']  #Limpando os termos desnecessários do dicionário
 ```
 
